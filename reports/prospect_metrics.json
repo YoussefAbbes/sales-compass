@@ -1,0 +1,56 @@
+{
+  "rankers": {
+    "model": {
+      "precision_at_k": 0.12977562158884173,
+      "recall_at_k": 0.08095777374653111,
+      "n_articles": 1649
+    },
+    "heuristic": {
+      "precision_at_k": 0.09169193450576106,
+      "recall_at_k": 0.035863156685602186,
+      "n_articles": 1649
+    },
+    "client size": {
+      "precision_at_k": 0.0446331109763493,
+      "recall_at_k": 0.029093051917595262,
+      "n_articles": 1649
+    },
+    "client breadth": {
+      "precision_at_k": 0.0787143723468769,
+      "recall_at_k": 0.039616113367945946,
+      "n_articles": 1649
+    },
+    "random": {
+      "precision_at_k": 0.005457853244390541,
+      "recall_at_k": 0.0019398749160037929,
+      "n_articles": 1649
+    }
+  },
+  "auc": 0.8747839151462373,
+  "beats_heuristic": true,
+  "train_rows": 1640161,
+  "train_positive_rate": 0.048991531928877716,
+  "feature_importance": {
+    "client_n_articles": 22.42967764715552,
+    "cosine_basket_sim": 16.01682388671117,
+    "knn_buyers": 11.779045256860629,
+    "client_n_families": 7.723598335005087,
+    "client_mean_ca_per_article": 5.305961082338908,
+    "brand_ca_share": 4.943772495471783,
+    "client_n_months": 4.318563727693774,
+    "article_n_buyers": 4.301375314985179,
+    "client_ca": 3.638523100640594,
+    "lift_weighted_overlap": 3.0312666152153587,
+    "enseigne": 2.6325626092775254,
+    "brand_n_held": 2.336532859287027,
+    "family_ca_share": 2.17661963962107,
+    "article_n_vendors": 1.9121740398561013,
+    "client_n_vendors": 1.8691590228107822,
+    "family_n_held": 1.379796536702276,
+    "family": 1.1932965082867928,
+    "share_signature_held": 1.0655780872166674,
+    "article_mean_ca_per_buyer": 0.8941325538591117,
+    "n_signature_held": 0.5763324789607861,
+    "article_ca": 0.4752082020439067
+  }
+}

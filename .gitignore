@@ -1,0 +1,47 @@
+# --- Confidential company data: NEVER commit ---
+# Raw extract (client names + revenue)
+*.xlsx
+*.xls
+# Generated datasets and recommendation lists (same confidentiality).
+# Leading slash = repo root only. Without it the pattern also matched fixtures/data/,
+# which is the anonymised set that MUST be committed — see tools/make_fixtures.py.
+/data/
+
+# Raw NAV exports. *.xlsx already covers the workbooks, but this folder must never
+# accept any committed file — a future .csv or .txt export would otherwise slip in.
+/exported-data/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Tooling / local noise ---
+.remember/
+*.stackdump
+.claude/
+
+# --- Frontend ---
+web/node_modules/
+web/dist/
+
+# --- Test scratch ---
+.pytest_tmp/
+.superpowers/
+# Redirected pytest output (`py -m pytest > test_output.txt`), not a fixture.
+test_output.txt
+
+# --- Fixtures runtime output ---
+# fixtures/ is committed on purpose (anonymised demo set), but the API appends vendor
+# feedback while it runs; that is per-developer noise, not part of the handover.
+fixtures/data/feedback.csv
+fixtures/data/feedback_events.jsonl
+
+# CatBoost training artifacts: regenerated every run, never source.
+catboost_info/
+tree_dump.json
+
+# Browser-driven verification artifacts (Playwright MCP)
+.playwright-mcp/
+v4-queue.png

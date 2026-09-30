@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-08-12T03:00:42",
+  "lookback_months": 12,
+  "horizon_months": 3,
+  "splits": {
+    "train": [
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08"
+    ],
+    "validation": [
+      "2025-09",
+      "2025-10"
+    ],
+    "embargo": [
+      "2025-11",
+      "2025-12"
+    ],
+    "test": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04"
+    ]
+  },
+  "rows": {
+    "train": 4021611,
+    "validation": 1022035,
+    "test": 2051182
+  },
+  "base_rate_test": 0.1137466104909267,
+  "auc": {
+    "train": 0.8072024090127217,
+    "validation": 0.7812854177217572,
+    "test": 0.7751774834302627
+  },
+  "auc_per_snapshot": {
+    "2026-01": 0.7762682268221528,
+    "2026-02": 0.7735674718518479,
+    "2026-03": 0.7749431203866727,
+    "2026-04": 0.7758966228225428
+  },
+  "precision_top30_model": 0.6215816703621582,
+  "precision_top30_revenue": 0.31855136733185513,
+  "feature_importance": {
+    "client_days_since_last": 18.547102616010903,
+    "article_n_clients": 8.936697838024292,
+    "enseigne": 8.647898836289382,
+    "client_n_orders": 8.215752855908832,
+    "client_amount": 6.778673356628582,
+    "client_n_articles": 6.647499595659792,
+    "article_amount": 6.289264639615631,
+    "article_repurchase_share": 5.615771809204394,
+    "client_active_months": 5.182301788711623,
+    "qty_sum": 4.369529853504303,
+    "vendor_code": 3.352838789906198,
+    "days_since_last": 2.9903429718634027,
+    "n_months": 2.59535441083664,
+    "median_interval": 2.4219911985332714,
+    "share_of_article": 1.8625135735748635,
+    "interval_cv": 1.5419919388473264,
+    "n_orders": 1.1976478295240938,
+    "overdue_ratio": 1.0834017312683184,
+    "amount_per_order": 1.051207408819604,
+    "return_rate": 0.8999478762105195,
+    "days_since_first": 0.8910194234652475,
+    "amount_sum": 0.4472324051579793,
+    "share_of_client": 0.43401725243488126
+  },
+  "not_comparable_to": {
+    "v1_annual_auc": 0.762,
+    "reason": "different horizon and label definition"
+  }
+}

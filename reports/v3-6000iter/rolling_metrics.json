@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-08-12T10:51:39",
+  "lookback_months": 12,
+  "horizon_months": 3,
+  "splits": {
+    "train": [
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08"
+    ],
+    "validation": [
+      "2025-09",
+      "2025-10"
+    ],
+    "embargo": [
+      "2025-11",
+      "2025-12"
+    ],
+    "test": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04"
+    ]
+  },
+  "rows": {
+    "train": 4021611,
+    "validation": 1022035,
+    "test": 2051182
+  },
+  "iterations_cap": 6000,
+  "early_stopping_rounds": 200,
+  "best_iteration": 5970,
+  "converged": true,
+  "base_rate_test": 0.1137466104909267,
+  "auc": {
+    "train": 0.8332983606605088,
+    "validation": 0.7876586346484447,
+    "test": 0.7714453924101818
+  },
+  "auc_per_snapshot": {
+    "2026-01": 0.7733476859830667,
+    "2026-02": 0.7695879370935519,
+    "2026-03": 0.7704624151777778,
+    "2026-04": 0.7723292496414931
+  },
+  "precision_top30_model": 0.6171470805617147,
+  "precision_top30_revenue": 0.31855136733185513,
+  "feature_importance": {
+    "client_days_since_last": 14.605356531483094,
+    "client_n_orders": 9.311875351548974,
+    "article_n_clients": 8.748228680425637,
+    "enseigne": 8.549681069482851,
+    "client_n_articles": 8.167801127169835,
+    "client_amount": 8.047978253613246,
+    "article_amount": 6.439595906658334,
+    "article_repurchase_share": 5.684246381197762,
+    "client_active_months": 4.246094931500718,
+    "qty_sum": 4.039497158705529,
+    "vendor_code": 3.9190835568326468,
+    "days_since_last": 2.6292971537471157,
+    "median_interval": 2.328996102186191,
+    "share_of_article": 2.263561620076802,
+    "n_months": 2.0152724506117274,
+    "amount_per_order": 1.7378189568009097,
+    "interval_cv": 1.515240135565799,
+    "overdue_ratio": 1.1378881464020076,
+    "days_since_first": 1.0116475245156424,
+    "amount_sum": 0.9697323809840356,
+    "n_orders": 0.9334394016282357,
+    "share_of_client": 0.9273713713554079,
+    "return_rate": 0.7702958075076508
+  },
+  "not_comparable_to": {
+    "v1_annual_auc": 0.762,
+    "reason": "different horizon and label definition"
+  }
+}

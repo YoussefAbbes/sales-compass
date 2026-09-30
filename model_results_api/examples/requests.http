@@ -1,0 +1,19 @@
+@base = http://127.0.0.1:8001/api/v1
+
+### Service state and model versions
+GET {{base}}/meta
+
+### Vendors available to the frontend
+GET {{base}}/vendors
+
+### Search by reference, brand, or designation
+GET {{base}}/articles?query=huile&limit=10
+
+### Replace V001 with a code returned by /vendors
+GET {{base}}/vendors/V001/repurchases?limit_clients=20&per_client=3
+
+### Replace both identifiers with values returned by discovery endpoints
+GET {{base}}/vendors/V001/articles/ART00001/prospects?limit=5
+
+### Preferred article-page request: both "Ils l'achetaient" and "À prospecter"
+GET {{base}}/vendors/V001/articles/ART00001/recommendations?limit=5

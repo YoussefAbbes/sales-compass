@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+primaryColor = "#D64B1F"
+backgroundColor = "#F6F3EC"
+secondaryBackgroundColor = "#EDE8DC"
+textColor = "#1B1A17"
+font = "Archivo"
